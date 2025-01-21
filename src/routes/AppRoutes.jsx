@@ -1,32 +1,3 @@
-## Step 1
-```bash
-npm create vite . or ชื่อไฟล์ที่อยากตั้ง
-npm install
-npm run dev
-```
-
-## Step 2 push project github
-```bash
-git init
-git add .
-git commit -m "init"
-git push
-```
-
-## When updated code to github
-```bash
-git add .
-git commit -m "init"
-git push
-```
-
-## Step 3 Install React Router
-```bash
-npm i react-router
-```
-
-```jsx
-//rfce
 import { Route, Routes } from "react-router";
 import Layout from "../layouts/Layout";
 import Home from "../pages/Home";
@@ -66,4 +37,3 @@ function AppRoutes() {
 }
 
 export default AppRoutes
-```
