@@ -67,3 +67,13 @@ function AppRoutes() {
 
 export default AppRoutes
 ```
+
+## Step 4 Global state with Austand
+```bash
+npm install zustand
+```
+
+## Stop 5 Fetch data
+```bash
+npm install axios
+```

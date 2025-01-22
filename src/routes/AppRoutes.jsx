@@ -10,6 +10,9 @@ import Manage from "../pages/admin/Manage"
 import Setting from "../pages/admin/Setting"
 import Recap from "../pages/Recap";
 import RecapUserState from "../pages/RecapUserState";
+import EasyZustand from "../pages/EasyZustand";
+import Product from "../pages/Product";
+import MyCart from "../pages/MyCart";
 
 function AppRoutes() {
     return (
@@ -25,6 +28,9 @@ function AppRoutes() {
                     <Route path="register" element={<Register/>} />
                     <Route path="recap" element={<Recap/>} />
                     <Route path="recapUserState" element={<RecapUserState/>} />
+                    <Route path="easyzustand" element={<EasyZustand/>} />
+                    <Route path="product" element={<Product/>} />
+                    <Route path="mycart" element={<MyCart/>} />
                 </Route>
 
                 {/* Private */}

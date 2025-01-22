@@ -10,6 +10,9 @@ function MainNav() {
                     <Link to='contact'>Contact</Link>
                     <Link to='recap'>Recap</Link>
                     <Link to='recapUserState'>Recap User State</Link>
+                    <Link to='easyzustand'>EasyZustand</Link>
+                    <Link to='product'>Product</Link>
+                    <Link to='mycart'>MyCart</Link>
                 </div>
                 <div className="flex gap-4">
                     <Link to='login'>Login</Link>
