@@ -6,6 +6,7 @@ import { persist } from "zustand/middleware"
 const productStore = (set) => ({
     products : [],
     cart : [],
+    
     actionGetData :  async () => {
         try {
             const res = await axios.get('https://dummyjson.com/products')
@@ -20,11 +21,22 @@ const productStore = (set) => ({
         // console.log(product);
         set((state)=>({cart:[...state.cart,product]}))
     },
+    actionRemoveProduct : (id) => {
+        set((state) => ({cart : state.cart.filter((item) => item.id !== id)}))
+    },
     actionClear : () => {
         set({cart : []})
-    }
+    },
 })
+const persistStore = {
+    name : 'product-store',
+    partialize : (state) => ({
+    cart : state.cart,
+    })
 
-const useProductStore = create(persist(productStore,{name : 'product-store'}))
+    
+}
+
+const useProductStore = create(persist(productStore,persistStore))
 
 export default useProductStore
